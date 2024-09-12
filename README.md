@@ -1,5 +1,4 @@
-<h1>Rock Paper Scissors Game</h1>
-<br>
+<h2>Rock Paper Scissors Game</h2>
 <h3>Description</h3>
 <p> Developed an interactive Rock Paper Scissors game using HTML, CSS, and JavaScript. The game features a user-friendly interface and responsive design.
 </p>
