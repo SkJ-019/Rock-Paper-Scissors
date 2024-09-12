@@ -9,4 +9,5 @@
   <li>Ensured cross-browser compatibility and responsiveness.</li>
 </ul> 
 <a href="https://skj-rock-paper-scissors.pages.dev/"> Check it out here!</a>
+<br>
 <p>Author - Sk Jawed Ali</p>
