@@ -8,6 +8,6 @@
   <li>Utilized CSS for styling to enhance the user experience.</li>
   <li>Ensured cross-browser compatibility and responsiveness.</li>
 </ul> 
-<a href="https://skj-rock-paper-scissors.pages.dev/"> Check it out here!</a>
+<a href="https://skj-rock-paper-scissors.pages.dev/" target="_blank"> Check it out here!</a>
 <p></p>
 <p>Author - Sk Jawed Ali</p>
