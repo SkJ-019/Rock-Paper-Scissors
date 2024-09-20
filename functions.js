@@ -10,6 +10,24 @@ if (score === null){
  Without this, the code won't work because we'd have null values in the properties wins, loses and ties so to solve that we check if the object is null, if it is then assign 0 to all properties.
  */
 }
+
+ let isAutoPlaying = false;
+ let intervalID;
+ function autoPlay(){
+    if (!isAutoPlaying){
+      intervalID = setInterval(function(){
+        const playerMove = pickComputerMove();
+        playGame(playerMove);
+      }, 1000);
+      isAutoPlaying = true;
+      document.querySelector('.auto-button').innerHTML = 'Stop Play';
+    }else{
+      clearInterval(intervalID); /* This stops the interval when the button is clicked again */
+      isAutoPlaying = false;
+      document.querySelector('.auto-button').innerHTML = 'Auto Play';
+    }
+  }
+
  function playGame(playerMove){
    const computerMove = pickComputerMove();
    let result = '';
