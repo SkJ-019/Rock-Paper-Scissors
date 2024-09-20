@@ -24,6 +24,12 @@ function autoPlay(){
   }
 }
 
+document.querySelector('.auto-button').addEventListener(
+  'click', () => {
+    autoPlay();
+  }
+);
+
 document.body.addEventListener('keydown', (event) => {
   if (event.key === 'r'){
     playGame('rock');
@@ -49,6 +55,16 @@ document.querySelector('.js-paper-button').addEventListener(
 document.querySelector('.js-scissors-button').addEventListener(
   'click', () => {
     playGame('scissors');
+  }
+);
+
+document.querySelector('.reset-button').addEventListener(
+  'click', () => {
+    score.wins = 0;
+    score.loses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScore();
   }
 );
 
